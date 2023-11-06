@@ -1,3 +1,3 @@
 # adelynnhenry.github.io
 
-Source code of [adelynnhenry.com](https://adelynnhenry.com).
+Source code for [adelynnhenry.com](https://adelynnhenry.com/).
