@@ -1,0 +1,10 @@
+---
+import "../components/styles/ResumeForSoftwareDevelopmentEngineer.scss";
+import Layout from "../components/layouts/Page.astro";
+import { site } from "../data/ConfigForSoftwareDevelopmentEngineer.json";
+const { frontmatter } = Astro.props;
+---
+
+<Layout frontmatter={frontmatter} site={site}>
+  <slot />
+</Layout>

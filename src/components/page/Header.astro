@@ -1,0 +1,18 @@
+---
+const { site, frontmatter } = Astro.props;
+frontmatter.description = site.liamEwohs ? atob(site.liame) : site.url;
+---
+
+<header>
+  <div>
+    <h1><a href="/">{site.title}</a></h1>
+    <span>{site.description}</span>
+  </div>
+
+  <div>
+    <h2>{frontmatter.title}</h2>
+    <span><a class="not-print" href="/">{site.url}</a></span>
+    <span><a class="print" href="#">{frontmatter.description}</a></span>
+  </div>
+</header>
+<hr />

@@ -1,0 +1,27 @@
+---
+import Layout from "../components/layouts/Site.astro";
+import "../components/styles/Index.scss";
+
+const { frontmatter } = Astro.props;
+
+import sdeConfig from "../data/ConfigForSoftwareDevelopmentEngineer.json";
+import cstConfig from "../data/ConfigForComputerScienceTutor.json";
+
+let site = null;
+switch (frontmatter.type) {
+  case "SoftwareDevelopmentEngineer": {
+    site = sdeConfig.site;
+    break;
+  }
+  case "ComputerScienceTutor": {
+    site = cstConfig.site;
+    break;
+  }
+}
+---
+
+<Layout frontmatter={frontmatter} site={site}>
+  <slot />
+</Layout>
+
+<style></style>
