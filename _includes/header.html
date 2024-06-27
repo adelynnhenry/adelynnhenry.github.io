@@ -13,6 +13,8 @@
 </header>
 <hr />
 <script>
-  Array.from(document.getElementsByClassName('liame'))
-  .forEach(element => element.innerHTML = atob(element.innerHTML))
+  (() => {
+    Array.from(document.getElementsByClassName('liame'))
+    .forEach(element => element.innerHTML = atob(element.innerHTML))
+  })()
 </script>
