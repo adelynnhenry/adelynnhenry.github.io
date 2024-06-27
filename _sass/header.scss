@@ -1,0 +1,33 @@
+header {
+  display: flex;
+}
+
+header span {
+  font-size: x-large;
+}
+
+header h1,
+header h2 {
+  margin-bottom: 5%;
+}
+
+header > div {
+  flex: auto;
+}
+
+header > div:first-child {
+  text-align: left;
+}
+
+header > div:last-child {
+  text-align: right;
+}
+
+header img {
+  /*
+  border-radius: 50%;
+  margin-top: 2.5vh;
+  width: 64px;
+  */
+  display: none;
+}

@@ -1,6 +1,10 @@
 .PHONY: all
+all: clean
+	bundle config unset path; \
+	bundle update --verbose; \
+	bundle install --verbose; \
+	bundle exec jekyll serve --verbose;
 
-all:
-	if [ ! -e ./node_modules ]; then npm install; fi && \
-	npm run build && \
-	npm run dev
+.PHONY: clean
+clean:
+	rm -rf $$(echo $$(cat .gitignore | grep -v '#'));

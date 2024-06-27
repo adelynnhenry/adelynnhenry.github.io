@@ -1,3 +1,3 @@
 # adelynnhenry.github.io
 
-Source code for [adelynnhenry.com](https://adelynnhenry.com/).
+Repository for the website of [Adelynn Henry (@adelynnhenry)](https://adelynnhenry.github.io).
