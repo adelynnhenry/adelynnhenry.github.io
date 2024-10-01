@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="index-flex-layout">
+    <div>
+        {%- for link in site.links -%}
+        <h3><a href="{{ link.url }}">{{ link.title }}</a></h3>
+        {%- endfor -%}
+    </div>
+    <div>
+        <a href="/"><img src="{{ site.profile_picture | relative_url }}" /></a>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+@import "global";
+
+p:has(> span) {
+  margin: 0;
+}
+
+p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+main {
+  margin: 2.5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+li {
+  margin-top: 1%;
+}
+
+h4,
+strong {
+  font-weight: 400;
+}
+
+@import "resume_flex_layout";

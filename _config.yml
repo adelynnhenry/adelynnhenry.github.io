@@ -1,0 +1,116 @@
+collections:
+  pages:
+    output: true
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+profile_picture: /assets/images/profile_picture.jpg
+favicon: /assets/images/favicon.png
+title: "Adelynn Henry"
+email: ""
+description: "Software Development Engineer"
+#description: "Computer Science Tutor"
+baseurl: ""
+url: "adelynnhenry.com"
+liame: "Y29udGFjdEBhZGVseW5uaGVucnkuY29t"
+links:
+  - title: Resume
+    url: /resume
+  - title: Email
+    url: https://mailhide.io/e/4Im1LR3V
+  - title: LinkedIn 
+    url: https://www.linkedin.com/in/adelynnhenry
+  - title: Github
+    url: https://github.com/adelynnhenry
+summary: >
+  Innovative software engineer with over 3 years of experience in designing, developing, and optimizing software solutions at Amazon Web Services (AWS). Demonstrated expertise in security, performance improvements, and operational excellence. Strong academic background with a Master of Philosophy in Engineering and Information Technology. Proven track record in mentoring, team collaboration, and leadership in both industry and academic settings.
+#Passionate educator with a comprehensive background in both academia and industry. Highly experienced and significantly qualified, with a two-year tenure as a University Teaching Assistant at The University of Sydney, a Master of Philosophy in Engineering and Information Technology, and three years in industry as a Software Development Engineer at Amazon Web Services. Proven track record of facilitating students in understanding complex concepts. Well-versed in tailoring teaching methods and lesson plans to cater to diverse learning styles, in both classroom and individual settings.
+articles:
+  - title: Experience
+    sections:
+      - title: S3, Amazon Web Services Inc.
+        subtitle: Software Development Engineer I
+        date: 2021 - 2023
+        description:
+          - Improved S3 storage layer performance through advanced, customer-specific load testing.
+          - Drove security enhancements and contributed to automated global deployments across S3 service teams.
+          - Fostered a culture of excellence by onboarding and mentoring new team members.
+          - Acted as Oncall Primary Resolver for S3 Index, swiftly resolving high-severity issues.
+      - title: Automated Reasoning Group, Amazon Web Services Inc.
+        subtitle: Associate Software Development Engineer
+        date: 2020
+        description:
+          - Developed proofs of security for confidential cryptographic keys, integrated into AWS KMS's continuous integration pipeline.
+      - title: Automated Reasoning Group, Amazon Web Services Inc.
+        subtitle: Associate Software Development Engineer
+        date: 2019
+        description:
+          - Utilized static program analysis to detect security vulnerabilities and identify plaintext passwords in enterprise codebases for the Application Security team.
+      - title: Automated Reasoning Group, Amazon Web Services Inc.
+        subtitle: Associate Software Development Engineer
+        date: 2018
+        description:
+          - Conducted security vulnerability analysis on AWS services' network infrastructure, employing logic programs to mathematically prove security properties.
+      - title: School of Computer Science, The University of Sydney
+        subtitle: University Teaching Assistant
+        date: 2018 - 2019
+        description:
+          - Assisted in teaching multiple university-level courses, including IT Capstone Project (COMP5703), Introduction to Programming (INFO1110), and Software Design Patterns (SOFT2201).
+      - title: The Souffle Project, The University of Sydney
+        subtitle: Open-Source Project Administrator
+        date: 2019 - 2021
+        description:
+          - Leadership role on open-source project implementing a state-of-the-art computational logic engine.
+      - title: The Souffle Project, The University of Sydney
+        subtitle: Junior Research Assistant
+        date: 2016
+        description:
+          - Conducted research in logic program evaluation.
+      - title: Collezione Santina Haute Couture
+        subtitle: Website Administrator
+        date: 2015
+        description:
+          - Designed and implemented the website for a high-end fashion designer.
+  - title: Qualifications
+    sections:
+      - title: Master of Philosophy, Engineering and Information Technology
+        subtitle: The University of Sydney
+        date: 2017 - 2021
+        description: >
+          Developed a novel technique for distributed, high-performance execution of logic programs using asynchronous streams, published as a Master's thesis.
+      - title: Bachelor of Liberal Arts and Science, Computer Science (Honors)
+        subtitle: The University of Sydney
+        date: 2014 - 2016
+        description: >
+          Conducted research on executing logic programs as a cloud service, published as an Honors thesis, which attracted interest from Amazon AWS.
+  - title: Publications
+    sections:
+      - title: Efficient Sink-Reachability Analysis via Graph Reduction
+        subtitle: IEEE Transactions on Knowledge & Data Engineering
+        date: 2021
+        description: >
+          Introduced a novel, scalable sink-reachability preserving graph reduction strategy, demonstrating high performance on large-scale, real-world benchmarks.
+  - title: Presentations
+    sections:
+      - title: SAPLING 2019
+        subtitle: Sydney Area Programming Language Interest Group
+        date: 2019
+      - title: SAPLING 2017
+        subtitle: Sydney Area Programming Language Interest Group
+        date: 2017
+  - title: Awards
+    sections:
+      - title: Postgraduate Research Scholarship
+        subtitle: The University of Sydney
+        date: 2018 - 2020
+      - title: Summer Research Scholarship
+        subtitle: The University of Sydney
+        date: 2016 - 2017
+  - title: Peer Reviews
+    sections:
+      - title: CC 2020
+        subtitle: ACM SIGPLAN 2020 International Conference on Compiler Construction
+      - title: LCTS 2018
+        subtitle: 19th Annual ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems
+      - title: TASE 2018
+        subtitle: 12th International Symposium on Theoretical Aspects of Software Engineering

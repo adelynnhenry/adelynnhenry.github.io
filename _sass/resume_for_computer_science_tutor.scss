@@ -1,0 +1,71 @@
+@import "resume";
+
+.ComputerScienceTutor {
+  h4 + p + ul {
+    display: none;
+  }
+
+  h3 + ul {
+    display: initial;
+  }
+
+  li li {
+    display: none;
+  }
+
+  h3,
+  h4,
+  ul,
+  li,
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  li,
+  h4,
+  p {
+    margin-left: 1%;
+  }
+  h4,
+  h3,
+  li {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
+  li:before,
+  h4:before {
+    content: "> ";
+  }
+  li {
+    list-style-type: none;
+  }
+
+  #summary {
+    display: none;
+  }
+
+  @import "Print";
+
+  @media print {
+    main {
+      column-count: 2;
+      line-height: 125%;
+    }
+    p,
+    li {
+      font-size: medium;
+    }
+  }
+}
+
+div.ComputerScienceTutor {
+  margin-left: 2.5%;
+  margin-top: 5%;
+  margin-bottom: -2.5%;
+}
+
+@import "print_two_column";
+
+div.SoftwareDevelopmentEngineer {
+  display: none;
+}

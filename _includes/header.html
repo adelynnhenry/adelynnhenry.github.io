@@ -1,0 +1,20 @@
+<header>
+  <div>
+    <h1>{{ site.title }}</h1>
+    <span>{{ site.description }}</span>
+  </div>
+  <div>
+    {%- if page.layout == 'page' -%} 
+      <h2>{{ page.title }}</h2>
+      <span><a class="not-print" href="/">{{ site.url }}</a></span>
+      <span><a class="print liame" href="#">{{ site.liame }}</a></span>
+    {%- endif -%}
+  </div>
+</header>
+<hr />
+<script>
+  (() => {
+    Array.from(document.getElementsByClassName('liame'))
+    .forEach(element => element.innerHTML = atob(element.innerHTML))
+  })()
+</script>

@@ -1,0 +1,26 @@
+.resume-flex-layout {
+  
+  text-align: center;
+  img {
+    max-height: 250px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+
+  @media print {
+    img {
+      display: none;
+    }
+
+    display: block;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .resume-flex-layout {
+    flex-wrap: wrap-reverse;
+  }
+}

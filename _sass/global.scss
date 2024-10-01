@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  margin: auto;
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
+  max-width: 700px;
+  line-height: 150%;
+  width: 80%;
+}
+
+h1, h2 {
+  line-height: 30px;
+}
+
+body * {
+  font-weight: 100;
+}
+
+a {
+  color: white;
+}
+span,
+span > a,
+blockquote,
+em {
+  color: gray;
+}
+
+blockquote {
+  margin-left: 0;
+  font-style: italic;
+}
+
+h1,
+h2 {
+  font-size: xx-large;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+h4,
+h5 {
+  font-size: large;
+  margin-bottom: 1%;
+}
+
+@import "header";
+@import "footer";

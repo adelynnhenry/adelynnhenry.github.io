@@ -1,0 +1,47 @@
+@import "print";
+
+@media print {
+  main {
+    column-count: 2;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    // font-weight: bold;
+    margin-bottom: 3%;
+  }
+
+  h4,
+  h5 {
+    // font-weight: bold;
+    margin-bottom: 2%;
+    // font-size: large;
+  }
+
+  ul {
+    margin-bottom: 3%;
+    margin-left: 5%;
+  }
+
+  p,
+  li {
+    font-size: small;
+  }
+
+  hr {
+    margin-top: 1%;
+  }
+}
