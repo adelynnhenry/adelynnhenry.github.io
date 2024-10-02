@@ -1,0 +1,46 @@
+<div class="resume-flex-layout">
+    <img src="{{ site.profile_picture | relative_url }}" />
+    <p>{{ site.summary }}</p>
+</div>
+<br />
+{%- for article in site.articles -%}
+<article>
+    <h3>{{ article.title }}</h3>
+    {%- if article.sections[0].description -%}
+    {%- for section in article.sections -%}
+    <section>
+        <h4>
+            <strong>
+                {{ section.title }}
+            </strong>
+        </h4>
+        <p>
+            <em>
+                {{ section.subtitle }}, {{ section.date }}
+            </em>
+        </p>
+        <ul>
+            {%- for description in section.description -%}
+            <li>{{ description }}</li>
+            {%- endfor -%}
+        </ul>
+    </section>
+    {%- endfor -%}
+    {%- else -%}
+    <section>
+        <ul>
+            {%- for section in article.sections -%}
+            <li>
+                <strong>
+                    {{ section.title }}
+                </strong>
+                <em>
+                    {{ section.subtitle }}, {{ section.date }}
+                </em>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </section>
+    {%- endif -%}
+</article>
+{%- endfor -%}

@@ -1,0 +1,50 @@
+<nav>
+    <ul class="row">
+        {%- for link in site.links -%}
+        <li class="column">
+            <i class="icon icon-{{ link.title | downcase }}"></i>
+            <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+        {%- endfor -%}
+    </ul>
+</nav>
+
+<style>
+
+        .row {
+            display: flex;
+            justify-content: space-around; /* Distributes space around the items */
+            align-items: center; /* Centers items vertically */
+        }
+        .column {
+            flex: 1; /* Flex-grow to take equal space */
+            text-align: center;
+        }
+    nav ul li {
+        display: inline;
+    }
+    i.icon-github {
+        display: block;
+    }
+    i.icon-github::after {
+        content: 'x';
+    }
+    i.icon-linkedin {
+        display: block;
+    }
+    i.icon-linkedin::after {
+        content: 'x';
+    }
+    i.icon-email {
+        display: block;
+    }
+    i.icon-email::after {
+        content: 'x';
+    }
+    i.icon-resume {
+        display: block;
+    }
+    i.icon-resume::after {
+        content: 'x';
+    }
+</style>

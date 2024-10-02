@@ -2,7 +2,9 @@
 layout: default
 ---
 
-<div class="index-flex-layout">
+{%- include nav.html -%}
+
+<!--div class="index-flex-layout">
     <div>
         {%- for link in site.links -%}
         <h3><a href="{{ link.url }}">{{ link.title }}</a></h3>
@@ -11,4 +13,6 @@ layout: default
     <div>
         <a href="/"><img src="{{ site.profile_picture | relative_url }}" /></a>
     </div>
-</div>
+</div-->
+
+{%- include page.html -%}
